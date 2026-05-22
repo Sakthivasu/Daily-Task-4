@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Dashboard</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>My Dashboard</span>
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+            
+
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                Messages
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div class="search-box">
+                <input type="text"
+                    placeholder="Search...">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-solid fa-bell"></i>
+
+               
+
+            </div>
+
+        </div>
+
+        <!-- DASHBOARD -->
+        <div class="dashboard-container">
+
+            <div class="dashboard-box">
+
+                <!-- HEADER -->
+                <div class="dashboard-header">
+
+                    <h1 id="welcome">
+                        Welcome
+                    </h1>
+
+                    <p class="subtitle">
+                        Dashboard
+                    </p>
+
+                </div>
+
+                <!-- USER DETAILS -->
+                <div class="details-box">
+
+                    <div class="detail-row">
+                        <span class="label">
+                            Role
+                        </span>
+
+                        <span id="role" class="value">
+                        <span id="total">0</span>
+                        </span>
+                    </div>
+
+                    <div class="detail-row">
+                        <span class="label">
+                            Account Created
+                        </span>
+
+                        <span id="createdAt" class="value">
+                       <span id="total">0</span>
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="button-group">
+
+                    <button
+                        class="profile-btn"
+                        onclick="viewProfile ()"
+                    >
+                        <i class="fa-solid fa-user"></i>
+                        View Profile
+                    </button>
+
+                    <button
+                        class="logout-btn"
+                        onclick="logout ()"
+                    >
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
