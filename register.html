@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Register Page</title>
+
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND GLOW -->
+    <div class="bg-circle one"></div>
+    <div class="bg-circle two"></div>
+
+    <!-- REGISTER CONTAINER -->
+    <div class="register-container">
+
+        <!-- LEFT PANEL -->
+        <div class="register-left">
+
+            <h1>
+                Join Our Platform
+            </h1>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="register-box">
+
+            <h2>
+                Create Account
+            </h2>
+
+            <p class="subtitle">
+                Register And Unlock Your dashboard
+            </p>
+
+            <!-- ERROR MESSAGE -->
+            <div id="registerError"
+                 class="error-message">
+            </div>
+
+            <!-- USERNAME -->
+            <div class="input-group">
+
+                <label>Username</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="registerUsername"
+                        placeholder="Enter Username"
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter Email"
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Enter Password"
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+            <div class="input-group">
+
+                <label>Confirm Password</label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-key"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                    >
+
+                </div>
+
+            </div>
+
+            <!-- REGISTER BUTTON -->
+            <button
+                class="register-btn"
+                onclick="register()"
+            >
+                <i class="fa-solid fa-user-check"></i>
+                Register
+            </button>
+
+            <!-- LOGIN -->
+            <p class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+            <!-- SOCIAL LOGIN -->
+            <div class="social-login">
+
+                <p>
+                    Or Register With
+                </p>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-google"></i>
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-github"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
